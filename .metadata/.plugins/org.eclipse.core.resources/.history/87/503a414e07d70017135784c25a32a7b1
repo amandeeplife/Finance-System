@@ -1,0 +1,21 @@
+package Finance;
+
+import java.util.Date;
+
+public class Professor extends DeptEmployee{
+	int numberOfPublications;
+ 
+	
+	Professor(String name,int numberOfPublications,Double salary, int yearOfHire, 
+			int monthOfHire, int dayOfHire){
+		super(name,salary,yearOfHire,monthOfHire,dayOfHire);
+		this.numberOfPublications=numberOfPublications;
+	}
+	public int getNumberOfPublication(){
+		return numberOfPublications;
+	}
+
+	public void setNumberOfPublications(int n){
+		numberOfPublications = n;
+	}
+}
